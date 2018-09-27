@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lorca.roomshareapp.RegistrationActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Personal Bits First..."/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/hostName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name..."
+            android:inputType="textPersonName" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/hostEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email..."
+            android:inputType="textEmailAddress" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/hostPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password..."
+            android:inputType="textPassword" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/hostCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Company..." />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Get Started With Your First Listing!"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address..." />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description..." />
+
+        <TextView
+            android:id="@+id/enSuite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Does the room feature an en suite?" />
+
+        <RadioGroup
+            android:id="@+id/optionGroup"
+            android:layout_width="376dp"
+            android:layout_height="52dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/yes"
+                android:text="Yes" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/no"
+                android:text="No" />
+        </RadioGroup>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/askingPrice"
+            android:layout_width="382dp"
+            android:layout_height="39dp"
+            android:hint="Asking Price..." />
+
+        <TextView
+            android:paddingTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/hostRegister"
+            android:layout_width="382dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:text="Register!" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v4.widget.NestedScrollView>
